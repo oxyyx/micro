@@ -1,0 +1,200 @@
+$brand-primary: #D7566A;
+$brand-danger: #CF4647;
+$brand-warning: #EDA461;
+$brand-success: #79BD9A;
+$brand-info: #3D5575;
+$brand-light-bg: #EEEEEE;
+$brand-white: #FFFFFF;
+$brand-light-text: #777777;
+$brand-dark-text: #333333;
+// http://www.colourlovers.com/palette/3927478/Next_CIty
+$navbar-default-bg: #FFFFFF;
+
+$border-radius-base: 0px;
+$border-radius-large: 0px;
+$border-radius-small: 0px;
+
+$btn-primary-color: $brand-white;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: $brand-primary;
+
+$btn-danger-color: $brand-danger;
+$btn-danger-bg: transparent;
+$btn-danger-border: $brand-danger;
+
+$navbar-margin-bottom: 10px;
+$panel-heading-padding: 10px;
+
+$tile-default-bg: $brand-light-bg;
+$tile-default-border-color: $brand-light-bg;
+
+$alert-danger-bg: $brand-danger;
+$alert-danger-text: $brand-white;
+$alert-danger-border: $brand-danger;
+
+$alert-success-bg: $brand-success;
+$alert-success-text: $brand-white;
+$alert-success-border: $brand-success;
+
+$alert-info-bg: $brand-info;
+$alert-info-text: $brand-white;
+$alert-info-border: $brand-info;
+
+$tile-header-padding: 5px;
+
+$font-family-sans-serif: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+//$font-family-sans-serif: "Merriweather", Georgia, "Times New Roman", Times, serif;
+$font-family-serif:       "Merriweather", Georgia, "Times New Roman", Times, serif;
+
+@import "bootstrap";
+
+.btn-primary {
+  border: 2px solid $btn-primary-border !important;
+  background-color: $brand-white;
+  color: $brand-primary;
+}
+
+.btn-primary:active {
+  border: 2px solid lighten($btn-primary-color, 10%) !important;
+}
+
+.navbar-default .navbar-brand {
+  font-family: "Pacifico", "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: $brand-primary;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active {
+  color: lighten($brand-primary, 10);
+}
+
+.panel-heading {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  color: $brand-white;
+}
+
+.panel-heading a {
+  color: $brand-white;
+}
+
+.form-control:focus {
+  border-color: $brand-primary;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus,
+a:focus, a:active:focus, a.active:focus, a.focus, a:active.focus, a.active.focus,
+input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
+input[type="color"]:focus, .uneditable-input:focus, textarea:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.input-group-btn .btn-primary {
+  background-color: $brand-primary;
+  color: white;
+}
+
+.input-group .input-group-addon {
+  border: 1px solid $brand-primary;
+  min-width: 40px;
+  background-color: $brand-primary;
+  color: $brand-white;
+}
+
+.alert {
+  border: 2px solid;
+}
+
+.default-hidden {
+  display: none;
+}
+
+.default {
+  color: $brand-dark-text;
+}
+
+.alert-fixed-top {
+  position: fixed;
+  width: 60%;
+
+  top: 0px;
+  left: 0;
+  right: 0;
+
+  padding: 15px;
+  border: 2px solid;
+  border-top: 0;
+  margin: auto;
+  z-index: 999999;
+}
+
+.modal-dialog {
+  margin-top: 100px;
+}
+
+.alert-danger {
+  border-color: $brand-danger !important;
+}
+
+.alert-success {
+  border-color: $brand-success !important;
+}
+
+.alert-info {
+  border-color: $brand-info !important;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.icon-column {
+  box-sizing: border-box !important;
+  text-align: center;
+
+  padding: 8px 4px !important;
+
+  vertical-align: middle;
+  line-height: 1.8em;
+
+  width: 38px;
+  min-width: 38px;
+  max-width: 38px;
+}
+
+.danger {
+  color: $brand-danger;
+}
+
+.container-fill {
+  top: 54px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .alert-fixed-top {
+    width: 80%;
+  }
+}
