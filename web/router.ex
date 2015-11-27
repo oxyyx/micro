@@ -18,10 +18,6 @@ defmodule Micro.Router do
 
     get "/", PageController, :index
     resources "/products", ProductController
+    resources "/categories", CategoryController
   end
-
-  # Other scopes may use custom stacks.
-  # scope "/api", Micro do
-  #   pipe_through :api
-  # end
 end

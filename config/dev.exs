@@ -12,7 +12,7 @@ config :micro, Micro.Endpoint,
   code_reloader: true,
   cache_static_lookup: false,
   check_origin: false,
-  watchers: [node: ["node_modules/gulp/bin/gulp.js", "watch"]]
+  watchers: []
 
 # Watch static and templates for browser reloading.
 config :micro, Micro.Endpoint,

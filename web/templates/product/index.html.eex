@@ -9,8 +9,9 @@
         <tr>
             <th class="icon-column"></th>
             <th>Description</th>
-            <th>Sellable</th>
-            <th>Buyable</th>
+            <th class="hidden-xs">Category</th>
+            <th class="hidden-xs">Sellable</th>
+            <th class="hidden-xs">Buyable</th>
             <th class="icon-column"></th>
             <th class="icon-column"></th>
         </tr>
@@ -20,11 +21,12 @@
         <tr>
             <td class="icon-column"><a href="<%= product_path @conn, :show, product %>"><i class="fa fa-ellipsis-h default"></i></a></td>
             <td><%= product.description %></td>
-            <td><%= product.sellable %></td>
-            <td><%= product.buyable %></td>
+            <td class="hidden-xs"><%= product.category_id %></td>
+            <td class="hidden-xs"><%= product.sellable %></td>
+            <td class="hidden-xs"><%= product.buyable %></td>
             <td class="icon-column"><a href="<%= product_path @conn, :edit, product %>"><i class="fa fa-pencil default"></i></a></td>
             <td class="icon-column">
-                <form action="/products/1" class="link" method="post">
+                <form action="<%= product_path @conn, :delete, product %>" class="link" method="post">
                     <input name="_method" type="hidden" value="delete">
                     <input name="_csrf_token" type="hidden" value="<%= Map.get(@conn.req_cookies, "_csrf_token") %>">
 
@@ -33,7 +35,6 @@
                     </a>
                 </form>
             </td>
-            <%# <%= link "Delete", to: product_path(@conn, :delete, product), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
         </tr>
     <% end %>
     </tbody>

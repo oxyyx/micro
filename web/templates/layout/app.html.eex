@@ -26,6 +26,9 @@
                         <li class="active">
                             <a href="<%= product_path @conn, :index %>">Products</a><span class="sr-only">(current)</span></a>
                         </li>
+                        <li>
+                            <a href="<%= category_path @conn, :index %>">Categories</a><span class="sr-only">(current)</span></a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">OxySocks</a></li>

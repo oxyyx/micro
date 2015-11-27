@@ -59,6 +59,10 @@ $font-family-serif:       "Merriweather", Georgia, "Times New Roman", Times, ser
   background-color: $brand-primary;
 }
 
+.btn {
+  box-shadow: none !important;
+}
+
 .navbar-default .navbar-brand {
   font-family: "Pacifico", "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;

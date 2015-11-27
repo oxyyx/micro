@@ -12,6 +12,9 @@
             <li>
                 <strong>Buyable:</strong><%= @product.buyable %>
             </li>
+            <li>
+                <strong>Category:</strong><%= @product.category_id %>
+            </li>
         </ul>
     </div>
 </div>
