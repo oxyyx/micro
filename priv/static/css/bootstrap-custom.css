@@ -5822,8 +5822,9 @@ button.close {
   background-color: #FFFFFF;
   color: #D7566A; }
 
-.btn-primary:active {
-  border: 2px solid white !important; }
+.btn-primary:active,
+.btn-primary:hover {
+  background-color: #D7566A; }
 
 .navbar-default .navbar-brand {
   font-family: "Pacifico", "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;

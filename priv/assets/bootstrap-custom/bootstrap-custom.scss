@@ -54,8 +54,9 @@ $font-family-serif:       "Merriweather", Georgia, "Times New Roman", Times, ser
   color: $brand-primary;
 }
 
-.btn-primary:active {
-  border: 2px solid lighten($btn-primary-color, 10%) !important;
+.btn-primary:active, 
+.btn-primary:hover {
+  background-color: $brand-primary;
 }
 
 .navbar-default .navbar-brand {
