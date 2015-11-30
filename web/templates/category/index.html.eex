@@ -19,7 +19,11 @@
         <tr>
             <td class="icon-column"><a href="<%= category_path @conn, :show, category %>"><i class="fa fa-ellipsis-h default"></i></a></td>
             <td><%= category.name %></td>
-            <td><%= category.parent_id %></td>
+            <td>
+                <%= if category.category do %>
+                    <%= category.category.name %>
+                <% end %>
+            </td>
             <td class="icon-column"><a href="<%= category_path @conn, :edit, category %>"><i class="fa fa-pencil default"></i></a></td>
             <td class="icon-column">
                 <form action="<%= category_path @conn, :delete, category %>" class="link" method="post">

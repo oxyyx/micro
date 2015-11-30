@@ -7,6 +7,8 @@ defmodule Micro.CategoryController do
 
   def index(conn, _params) do
     categories = Repo.all(Category)
+    |> Repo.preload(:category)
+
     render(conn, "index.html", categories: categories)
   end
 
@@ -29,7 +31,8 @@ defmodule Micro.CategoryController do
   end
 
   def show(conn, %{"id" => id}) do
-    category = Repo.get!(Category, id) |> Repo.preload [:products]
+    category = Repo.get!(Category, id) 
+    |> Repo.preload [:products, :category] 
 
     render(conn, "show.html", category: category)
   end

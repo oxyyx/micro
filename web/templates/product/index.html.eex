@@ -21,7 +21,7 @@
         <tr>
             <td class="icon-column"><a href="<%= product_path @conn, :show, product %>"><i class="fa fa-ellipsis-h default"></i></a></td>
             <td><%= product.description %></td>
-            <td class="hidden-xs"><%= product.category_id %></td>
+            <td class="hidden-xs"><%= product.category.name %></td>
             <td class="hidden-xs"><%= product.sellable %></td>
             <td class="hidden-xs"><%= product.buyable %></td>
             <td class="icon-column"><a href="<%= product_path @conn, :edit, product %>"><i class="fa fa-pencil default"></i></a></td>

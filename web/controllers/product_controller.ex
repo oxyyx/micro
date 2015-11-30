@@ -7,6 +7,8 @@ defmodule Micro.ProductController do
 
   def index(conn, _params) do
     products = Repo.all(Product)
+    |> Repo.preload(:category)
+
     render(conn, "index.html", products: products)
   end
 

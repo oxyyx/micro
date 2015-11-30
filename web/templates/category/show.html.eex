@@ -12,7 +12,9 @@
 
 			<li>
 			<strong>Parent category:</strong>
-			<%= @category.parent_id %>
+			    <%= if @category.category do %>
+                    <%= @category.category.name %>
+                <% end %>
 			</li>
 			<li>
 				<strong>Products in this category:</strong>

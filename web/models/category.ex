@@ -3,18 +3,17 @@ defmodule Micro.Category do
 
   schema "categories" do
     field :name, :string
+
     belongs_to :category, Micro.Category
 
-    field :parent_id, :integer
-
-    has_many :subcategories, Micro.Category, foreign_key: :parent_id
+    has_many :subcategories, Micro.Category, foreign_key: :category_id
     has_many :products, Micro.Product, foreign_key: :category_id
 
     timestamps
   end
 
   @required_fields ~w(name)
-  @optional_fields ~w(parent_id)
+  @optional_fields ~w(category_id)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
