@@ -4,7 +4,7 @@
 	</div>
 
 	<div class="col-md-12">
-		<%= render "form.html", changeset: @changeset, action: product_path(@conn, :update, @product) %>
+		<%= render "form.html", changeset: @changeset, categories: @categories, action: product_path(@conn, :update, @product) %>
 	</div>
 </div>
 

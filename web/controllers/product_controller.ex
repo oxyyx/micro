@@ -14,7 +14,13 @@ defmodule Micro.ProductController do
 
   def new(conn, _params) do
     changeset = Product.changeset(%Product{})
-    render(conn, "new.html", changeset: changeset)
+    query = from c in Micro.Category,
+            select: {c.name, c.id}
+
+    categories = Repo.all(query)
+
+
+    render(conn, "new.html", changeset: changeset, categories: categories)
   end
 
   def create(conn, %{"product" => product_params}) do
@@ -38,7 +44,13 @@ defmodule Micro.ProductController do
   def edit(conn, %{"id" => id}) do
     product = Repo.get!(Product, id)
     changeset = Product.changeset(product)
-    render(conn, "edit.html", product: product, changeset: changeset)
+
+    query = from c in Micro.Category,
+            select: {c.name, c.id}
+
+    categories = Repo.all(query)
+
+    render(conn, "edit.html", product: product, changeset: changeset, categories: categories)
   end
 
   def update(conn, %{"id" => id, "product" => product_params}) do

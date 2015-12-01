@@ -4,6 +4,6 @@
 	</div>
 
 	<div class="col-md-12">
-		<%= render "form.html", changeset: @changeset, action: category_path(@conn, :update, @category) %>
+		<%= render "form.html", changeset: @changeset, categories: @categories, action: category_path(@conn, :update, @category) %>
 	</div>
 </div>

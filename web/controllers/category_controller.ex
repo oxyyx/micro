@@ -1,5 +1,6 @@
 defmodule Micro.CategoryController do
   use Micro.Web, :controller
+  require Logger
 
   alias Micro.Category
 
@@ -14,7 +15,13 @@ defmodule Micro.CategoryController do
 
   def new(conn, _params) do
     changeset = Category.changeset(%Category{})
-    render(conn, "new.html", changeset: changeset)
+
+    query = from c in Micro.Category,
+            select: {c.name, c.id}
+
+    categories = Repo.all(query)
+
+    render(conn, "new.html", changeset: changeset, categories: categories)
   end
 
   def create(conn, %{"category" => category_params}) do
@@ -40,7 +47,13 @@ defmodule Micro.CategoryController do
   def edit(conn, %{"id" => id}) do
     category = Repo.get!(Category, id)
     changeset = Category.changeset(category)
-    render(conn, "edit.html", category: category, changeset: changeset)
+
+    query = from c in Micro.Category,
+            select: {c.name, c.id}
+
+    categories = Repo.all(query)
+
+    render(conn, "edit.html", category: category, changeset: changeset, categories: categories)
   end
 
   def update(conn, %{"id" => id, "category" => category_params}) do

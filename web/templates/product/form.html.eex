@@ -17,7 +17,7 @@
 
     <div class="form-group">
         <%= label f, :category_id, "Category", class: " control-label" %>
-        <%= text_input f, :category_id, class: "form-control" %>
+        <%= select f, :category_id, @categories,class: "form-control" %>
     </div>
 
     <div class="checkbox">
