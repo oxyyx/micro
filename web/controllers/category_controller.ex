@@ -20,8 +20,9 @@ defmodule Micro.CategoryController do
             select: {c.name, c.id}
 
     categories = Repo.all(query)
+    all_categories = List.insert_at(categories, 0, {"", nil})
 
-    render(conn, "new.html", changeset: changeset, categories: categories)
+    render(conn, "new.html", changeset: changeset, categories: all_categories)
   end
 
   def create(conn, %{"category" => category_params}) do
@@ -52,8 +53,9 @@ defmodule Micro.CategoryController do
             select: {c.name, c.id}
 
     categories = Repo.all(query)
+    all_categories = List.insert_at(categories, 0, {"", nil})
 
-    render(conn, "edit.html", category: category, changeset: changeset, categories: categories)
+    render(conn, "edit.html", category: category, changeset: changeset, categories: all_categories)
   end
 
   def update(conn, %{"id" => id, "category" => category_params}) do

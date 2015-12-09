@@ -1,5 +1,9 @@
-<h2>New category</h2>
+<div class="col-md-8 col-md-offset-2">
+	<div class="page-header col-md-12">
+		<h1>NEW CATEGORY <small><%= link "Back to index", to: category_path(@conn, :index) %></small></h1>
+	</div>
 
-<%= render "form.html", changeset: @changeset, categories: @categories, action: category_path(@conn, :create) %>
-
-<%= link "Back", to: category_path(@conn, :index) %>
+	<div class="col-md-12">
+                <%= render "form.html", changeset: @changeset, categories: @categories, action: category_path(@conn, :create) %>
+	</div>
+</div>

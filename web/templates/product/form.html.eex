@@ -17,7 +17,7 @@
 
     <div class="form-group">
         <%= label f, :category_id, "Category", class: " control-label" %>
-        <%= select f, :category_id, @categories,class: "form-control" %>
+        <%= select f, :category_id, @categories,class: "form-control", default: nil %>
     </div>
 
     <div class="checkbox">
