@@ -16,5 +16,3 @@ erl_crash.dump
 /config/prod.secret.exs
 /node_modules
 /priv/components
-
-/config/dev.exs
