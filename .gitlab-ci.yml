@@ -6,7 +6,7 @@ before_script:
 - service postgresql restart
 - sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'micro_test';"
 - service postgresql restart
-- mix deps.get
+- MIX_ENV=test mix deps.get
 
 # Run MIX-test
 test:micro-test:
