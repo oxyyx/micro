@@ -2,6 +2,7 @@
 image: 'trenpixster/elixir'
 
 before_script:
+- apt-get update -qq && apt-get install -y -qq postgresql
 - mix deps.get
 - ls -ls 
 
