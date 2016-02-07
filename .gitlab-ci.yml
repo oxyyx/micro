@@ -1,0 +1,10 @@
+# Select image from https://hub.docker.com/_/php/
+image: 'trenpixster/elixir'
+
+before_script:
+- mix deps.get
+- ls -ls 
+
+test:app:
+  script:
+  - mix test
