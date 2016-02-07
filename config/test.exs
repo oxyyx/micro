@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :micro, Micro.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "micro_test",
   database: "micro_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
