@@ -6,6 +6,6 @@ before_script:
 - mix deps.get
 - ls -ls 
 
-test:app:
+test:micro-test:
   script:
   - mix test
