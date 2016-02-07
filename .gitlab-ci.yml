@@ -3,7 +3,9 @@ image: 'trenpixster/elixir'
 
 before_script:
 - apt-get update -qq && apt-get install -y -qq postgresql
-- sudo service postgresql restart
+- service postgresql restart
+- sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"
+- service postgresql restart
 - mix deps.get
 - ls -ls 
 
