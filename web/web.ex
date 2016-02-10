@@ -50,6 +50,8 @@ defmodule Micro.Web do
       use Phoenix.HTML
 
       import Micro.Router.Helpers
+      import Micro.ErrorHelpers
+      import Micro.Gettext
     end
   end
 

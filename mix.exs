@@ -6,7 +6,7 @@ defmodule Micro.Mixfile do
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
-     compilers: [:phoenix] ++ Mix.compilers,
+     compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      aliases: aliases,
@@ -18,7 +18,7 @@ defmodule Micro.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Micro, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger,
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex]]
   end
 
@@ -35,6 +35,7 @@ defmodule Micro.Mixfile do
      {:postgrex, "~> 0.11.0"},
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
+     {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"}]
   end
 
