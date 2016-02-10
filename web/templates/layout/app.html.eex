@@ -41,7 +41,7 @@
         <div class="alert alert-danger default-hidden" role="alert"><%= get_flash(@conn, :error) %></div>
 
         <div class="container-fluid" role="main">
-            <%= @inner %>
+            <%= render @view_module, @view_template, assigns %>
         </div>
 
         <script src="<%= static_path(@conn, "/js/jquery.min.js") %>"></script>
