@@ -4,7 +4,7 @@ image: 'trenpixster/elixir'
 before_script:
 - apt-get update -qq && apt-get install -y -qq postgresql
 - service postgresql restart
-- sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'micro_test';"
+- sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"
 - service postgresql restart
 - MIX_ENV=test mix deps.get
 
