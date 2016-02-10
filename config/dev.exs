@@ -1,13 +1,22 @@
 use Mix.Config
 
-# We don't run a server during test. If one is required,
-# you can enable the server option below.
 config :micro, Micro.Endpoint,
-  http: [port: 4001],
-  server: false
+	http: [port: 4000],
+	debug_errors: true,
+	code_reloader: false,
+	cache_static_lookup: false,
+	check_origin: false,
+	watchers: []
 
-# Print only warnings and errors during test
-config :logger, level: :warn
+# Watch static and templates for browser reloading.
+config :micro, Micro.Endpoint,
+	live_reload: []
+
+# Do not include metadata nor timestamps in development logs
+config :logger, :console, format: "[$level] $message\n"
+
+# Set a higher stacktrace during development.
+config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :micro, Micro.Repo,
@@ -16,4 +25,4 @@ config :micro, Micro.Repo,
   password: "postgres",
   database: "micro_dev",
   hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  pool_size: 10
