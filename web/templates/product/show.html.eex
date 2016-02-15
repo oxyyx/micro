@@ -16,6 +16,20 @@
                 <strong>Category:</strong><%= @product.category_id %>
             </li>
         </ul>
+        <table class="table table-bordered">
+            <thead>
+                <th>Date</th>
+                <th>Price</th>
+            </thead>
+            <tbody>
+                <%= for sellingprice <- @product.sellingprices do %>
+                        <tr>
+                            <td><%= sellingprice.startdate %></td>
+                            <td><%= sellingprice.price %></td>
+                        </tr>
+                <% end %>
+            </tbody>
+        </table>
     </div>
 </div>
 

@@ -7,6 +7,7 @@ defmodule Micro.Product do
     field :buyable, :boolean, default: false
 
     belongs_to :category, Micro.Category
+    has_many :sellingprices, Micro.SellingPrice, foreign_key: :product_id
 
     timestamps
   end

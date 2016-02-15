@@ -38,6 +38,8 @@ defmodule Micro.ProductController do
 
   def show(conn, %{"id" => id}) do
     product = Repo.get!(Product, id)
+    |> Repo.preload [:sellingprices]
+
     render(conn, "show.html", product: product)
   end
 

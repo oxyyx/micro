@@ -1,0 +1,18 @@
+<h2>Show selling price</h2>
+
+<ul>
+
+  <li>
+    <strong>Price:</strong>
+    <%= @selling_price.price %>
+  </li>
+
+  <li>
+    <strong>Startdate:</strong>
+    <%= @selling_price.startdate %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: selling_price_path(@conn, :edit, @selling_price) %>
+<%= link "Back", to: selling_price_path(@conn, :index) %>

@@ -19,5 +19,6 @@ defmodule Micro.Router do
     get "/", PageController, :index
     resources "/products", ProductController
     resources "/categories", CategoryController
+    resources "/sellingprices", SellingPriceController
   end
 end
