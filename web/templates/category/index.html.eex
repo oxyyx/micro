@@ -3,7 +3,7 @@
 </div>
 
 <div class="col-sm-12">
-<div class="panel-heading">Categories</div>
+<div class="panel-heading"><%= gettext "Categories" %></div>
 <table class="table table-striped table-bordered">
     <thead>
         <tr>
