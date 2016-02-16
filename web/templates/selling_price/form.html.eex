@@ -6,12 +6,6 @@
   <% end %>
 
   <div class="form-group">
-    <%= label f, :product_id, class: "control-label" %>
-    <%= select f, :product_id, @products, class: "form-control", default: nil%>
-    <%= error_tag f, :product_id %>
-  </div>
-
-  <div class="form-group">
     <%= label f, :price, class: "control-label" %>
     <%= number_input f, :price, step: "any", class: "form-control" %>
     <%= error_tag f, :price %>

@@ -17,8 +17,12 @@ defmodule Micro.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    resources "/products", ProductController
+    
+    resources "/products", ProductController do
+      resources "/sellingprices", SellingPriceController, except: [:index, :show]
+    end
+
     resources "/categories", CategoryController
-    resources "/sellingprices", SellingPriceController
+
   end
 end

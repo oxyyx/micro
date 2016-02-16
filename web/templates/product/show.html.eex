@@ -4,29 +4,35 @@
     </div>
 
     <div class="col-md-12">
-        <ul>
-            <li>
-                <strong>Sellable:</strong><%= @product.sellable %>
-            </li>
+        <div>
+            <label for="sellable">Sellable</label>
+            <p id="sellable"><%= @product.sellable %></p>
 
-            <li>
-                <strong>Buyable:</strong><%= @product.buyable %>
-            </li>
-            <li>
-                <strong>Category:</strong><%= @product.category_id %>
-            </li>
-        </ul>
+            <label for="buyable">Buyable</label>
+            <p id="buyable"><%= @product.buyable %></p>
+
+            <label for="category">Category</label>
+            <p id="category"><%= @product.category_id %></p>
+        </div>
+
+        <div class="text-right" style="margin-bottom: 5px;">
+            <%= link "New sellingprice", to: product_selling_price_path(@conn, :new, @product), class: "btn btn-primary" %>
+        </div>
+
+        <div class="panel-heading">Prices</div>
         <table class="table table-bordered">
             <thead>
                 <th>Date</th>
                 <th>Price</th>
+                <th class="icon-column"></th>
             </thead>
             <tbody>
                 <%= for sellingprice <- @product.sellingprices do %>
-                        <tr>
-                            <td><%= sellingprice.startdate %></td>
-                            <td><%= sellingprice.price %></td>
-                        </tr>
+                <tr>
+                    <td><%= sellingprice.startdate %></td>
+                    <td><%= sellingprice.price %></td>
+                    <td class="icon-column"><a href="<%= product_selling_price_path @conn, :edit, @product, sellingprice %>"><i class="fa fa-pencil default"></i></a></td>
+                </tr>
                 <% end %>
             </tbody>
         </table>
