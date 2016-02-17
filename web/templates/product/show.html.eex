@@ -30,7 +30,7 @@
                 <%= for sellingprice <- @product.sellingprices do %>
                 <tr>
                     <td class="icon-column"><a href="<%= product_selling_price_path @conn, :edit, @product, sellingprice %>"><i class="fa fa-pencil default"></i></a></td>
-                    <td><%= sellingprice.startdate %></td>
+                    <td><%= Ecto.Date.to_erl(sellingprice.startdate) |> Timex.Date.from |> Timex.DateFormat.format!("{0D}-{0M}-{YYYY}") %></td>
                     <td><%= sellingprice.price %></td>
                 </tr>
                 <% end %>
