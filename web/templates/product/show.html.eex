@@ -1,6 +1,6 @@
 <div class="col-md-8 col-md-offset-2">
     <div class="page-header col-md-12">
-        <h1><%= @product.description %> <small><%= link "Back to index", to: product_path(@conn, :index) %></small></h1>
+        <h1><%= @product.description %></h1>
     </div>
 
     <div class="col-md-12">
@@ -22,20 +22,19 @@
         <div class="panel-heading">Prices</div>
         <table class="table table-bordered">
             <thead>
+                <th class="icon-column"></th>
                 <th>Date</th>
                 <th>Price</th>
-                <th class="icon-column"></th>
             </thead>
             <tbody>
                 <%= for sellingprice <- @product.sellingprices do %>
                 <tr>
+                    <td class="icon-column"><a href="<%= product_selling_price_path @conn, :edit, @product, sellingprice %>"><i class="fa fa-pencil default"></i></a></td>
                     <td><%= sellingprice.startdate %></td>
                     <td><%= sellingprice.price %></td>
-                    <td class="icon-column"><a href="<%= product_selling_price_path @conn, :edit, @product, sellingprice %>"><i class="fa fa-pencil default"></i></a></td>
                 </tr>
                 <% end %>
             </tbody>
         </table>
     </div>
 </div>
-

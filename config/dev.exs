@@ -3,14 +3,20 @@ use Mix.Config
 config :micro, Micro.Endpoint,
 	http: [port: 4000],
 	debug_errors: true,
-	code_reloader: false,
+	code_reloader: true,
 	cache_static_lookup: false,
 	check_origin: false,
-	watchers: []
+	watchers: [node: ["node_modules/gulp/bin/gulp.js", "watch"]]
 
 # Watch static and templates for browser reloading.
 config :micro, Micro.Endpoint,
-	live_reload: []
+	live_reload: [
+    patterns: [
+      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      ~r{web/views/.*(ex)$},
+      ~r{web/templates/.*(eex)$}
+    ]
+  ]
 
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"

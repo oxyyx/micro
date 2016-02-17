@@ -5926,6 +5926,9 @@ input[type="color"]:focus, .uneditable-input:focus, textarea:focus {
 .danger {
   color: #CF4647; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 .container-fill {
   top: 54px;
   left: 0;

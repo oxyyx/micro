@@ -186,6 +186,10 @@ input[type="color"]:focus, .uneditable-input:focus, textarea:focus {
   color: $brand-danger;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .container-fill {
   top: 54px;
   left: 0;

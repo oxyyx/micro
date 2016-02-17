@@ -6,6 +6,7 @@ var concat =        require('gulp-concat');
 // Common paths.
 var paths = {
     BootstrapSCSS: 'priv/assets/bootstrap-custom/bootstrap-custom.scss',
+    BootstrapInclude: 'priv/components/bootstrap-sass/assets/stylesheets',
 }
 
 // Build admin CSS from SASS/CSS
@@ -14,9 +15,7 @@ gulp.task('bootstrap-sass', function() {
         .pipe(sass({
             trace: true,
             style: 'compressed',
-            includePaths: [
-                'priv/components/bootstrap-sass/assets/stylesheets'
-            ]
+            includePaths: [paths.BootstrapInclude]
         }))
         .pipe(gulp.dest('priv/static/css'));
 });

@@ -1,3 +1,9 @@
-<h2>Edit selling price</h2>
+<div class="col-md-8 col-md-offset-2">
+	<div class="page-header col-md-12">
+		<h1 class="uppercase"><%= gettext "Edit selling price" %></h1>
+	</div>
 
-<%= render "form.html", changeset: @changeset, products: @products, action: product_selling_price_path(@conn, :update, @product, @selling_price) %>
+	<div class="col-md-12">
+		<%= render "form.html", changeset: @changeset, products: @products, action: product_selling_price_path(@conn, :update, @product, @selling_price) %>
+	</div>
+</div>
