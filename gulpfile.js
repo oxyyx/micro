@@ -1,7 +1,5 @@
-var gulp =          require('gulp');
-var sass =          require('gulp-sass');
-var minifyCSS =     require('gulp-minify-css')
-var concat =        require('gulp-concat');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
 // Common paths.
 var paths = {
@@ -12,12 +10,12 @@ var paths = {
 // Build admin CSS from SASS/CSS
 gulp.task('bootstrap-sass', function() {
     return gulp.src(paths.BootstrapSCSS)
-        .pipe(sass({
-            trace: true,
-            style: 'compressed',
-            includePaths: [paths.BootstrapInclude]
-        }))
-        .pipe(gulp.dest('priv/static/css'));
+    .pipe(sass({
+        trace: true,
+        style: 'compressed',
+        includePaths: [paths.BootstrapInclude]
+    }))
+    .pipe(gulp.dest('priv/static/css'));
 });
 
 // Watch for changes.
