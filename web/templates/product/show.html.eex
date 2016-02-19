@@ -5,13 +5,13 @@
 
     <div class="col-md-12">
         <div>
-            <label for="sellable">Sellable</label>
+            <label for="sellable"><%= gettext "Sellable" %></label>
             <p id="sellable"><%= @product.sellable %></p>
 
-            <label for="buyable">Buyable</label>
+            <label for="buyable"><%= gettext "Buyable" %></label>
             <p id="buyable"><%= @product.buyable %></p>
 
-            <label for="category">Category</label>
+            <label for="category"><%= gettext "Category" %></label>
             <p id="category"><%= @product.category_id %></p>
         </div>
 
@@ -19,12 +19,12 @@
             <%= link "New sellingprice", to: product_selling_price_path(@conn, :new, @product), class: "btn btn-primary" %>
         </div>
 
-        <div class="panel-heading">Prices</div>
+        <div class="panel-heading"><%= gettext "Prices" %></div>
         <table class="table table-bordered">
             <thead>
                 <th class="icon-column"></th>
-                <th>Date</th>
-                <th>Price</th>
+                <th><%= gettext "Date" %></th>
+                <th><%= gettext "Price" %></th>
             </thead>
             <tbody>
                 <%= for sellingprice <- @product.sellingprices do %>

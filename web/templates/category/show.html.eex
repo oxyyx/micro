@@ -1,23 +1,23 @@
 <div class="col-md-8 col-md-offset-2">
     <div class="page-header col-md-12">
-        <h1><%= @category.name %> <small><%= link "Back to index", to: category_path(@conn, :index) %></small></h1>
+        <h1><%= @category.name %></h1>
     </div>
 
     <div class="col-md-12">
 	    <ul>
 			<li>
-			<strong>Name:</strong>
+			<strong><%= gettext "Name:" %></strong>
 			<%= @category.name %>
 			</li>
 
 			<li>
-			<strong>Parent category:</strong>
+			<strong><%= gettext "Parent:" %></strong>
 			    <%= if @category.category do %>
                     <%= @category.category.name %>
                 <% end %>
 			</li>
 			<li>
-				<strong>Products in this category:</strong>
+				<strong><%= gettext "Products:" %></strong>
 
 				<ul>
 					<%= for product <- @category.products do %>

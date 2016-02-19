@@ -1,86 +1,96 @@
-## `msgid`s in this file come from POT (.pot) files. Do not add, change, or
-## remove `msgid`s manually here as they're tied to the ones in the
-## corresponding POT file (with the same domain). Use `mix gettext.extract
-## --merge` or `mix gettext.merge` to merge POT files into PO files.
+# # `msgid`s in this file come from POT (.pot) files. Do not add, change, or
+# # remove `msgid`s manually here as they're tied to the ones in the
+# # corresponding POT file (with the same domain). Use `mix gettext.extract
+# # --merge` or `mix gettext.merge` to merge POT files into PO files.
 msgid ""
 msgstr ""
 "Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
 
 msgid "can't be blank"
-msgstr ""
+msgstr "mag niet leeg zijn"
 
 msgid "is invalid"
-msgstr ""
+msgstr "is ongeldig"
 
 msgid "has invalid format"
-msgstr ""
+msgstr "heeft een ongeldig formaat"
 
 msgid "has an invalid entry"
-msgstr ""
+msgstr "heeft een ongeldige entry"
 
 msgid "is reserved"
-msgstr ""
+msgstr "is gereserveer"
 
 msgid "does not match confirmation"
-msgstr ""
+msgstr "komt niet overeen met bevestiging"
 
 msgid "is still associated to this entry"
-msgstr ""
+msgstr "is nog steeds geassocieerd aan deze entry"
 
 msgid "are still associated to this entry"
-msgstr ""
+msgstr "zijn nog steeds geassocieerd aan deze entry"
 
 msgid "should be %{count} character(s)"
 msgid_plural "should be %{count} character(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "zou %{count} karakters moeten zijn"
+msgstr[1] "zou %{count} karakters moeten zijn"
 
 msgid "should have %{count} item(s)"
 msgid_plural "should have %{count} item(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "zou %{count} item(s) moeten hebben"
+msgstr[1] "zou %{count} item(s) moeten hebben"
 
 msgid "should be at least %{count} character(s)"
 msgid_plural "should be at least %{count} character(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "zou op zijn minst %{count} karakter(s) lang moeten zijn"
+msgstr[1] "zou op zijn minst %{count} karakter(s) lang moeten zijn"
 
 msgid "should have at least %{count} item(s)"
 msgid_plural "should have at least %{count} item(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "zou op zijn minst %{count}  item(s) moeten bevatten"
+msgstr[1] "zou op zijn minst %{count}  item(s) moeten bevatten"
 
 msgid "should be at most %{count} character(s)"
 msgid_plural "should be at most %{count} character(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "zou op zijn meest %{count}  karakter(s) moeten zijn"
+msgstr[1] "zou op zijn meest %{count}  karakter(s) moeten zijn"
 
 msgid "should have at most %{count} item(s)"
 msgid_plural "should have at most %{count} item(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "zou op zijn meest %{count}  item(s) moeten bevatten"
+msgstr[1] "zou op zijn meest %{count}  item(s) moeten bevatten"
 
 msgid "must be less than %{count}"
 msgid_plural "must be less than %{count}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "moet minder zijn dan %{count}"
+msgstr[1] "moet minder zijn dan %{count}"
 
 msgid "must be greater than %{count}"
 msgid_plural "must be greater than %{count}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "moet groter zijn dan %{count}"
+msgstr[1] "moet groter zijn dan %{count}"
 
 msgid "must be less than or equal to %{count}"
 msgid_plural "must be less than or equal to %{count}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "moet kleiner of gelijk zijn dan %{count}"
+msgstr[1] "moet kleiner of gelijk zijn dan %{count}"
 
 msgid "must be greater than or equal to %{count}"
 msgid_plural "must be greater than or equal to %{count}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "moet groter of gelijk zijn dan %{count}"
+msgstr[1] "moet groter of gelijk zijn dan %{count}"
 
 msgid "must be equal to %{count}"
 msgid_plural "must be equal to %{count}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "moet gelijk zijn aan %{count}"
+msgstr[1] "moet gelijk zijn aan %{count}"

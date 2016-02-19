@@ -1,6 +1,6 @@
 <div class="col-md-8 col-md-offset-2">
 	<div class="page-header col-md-12">
-		<h1>EDIT PRODUCT <small><%= link "Back to index", to: product_path(@conn, :index) %></small></h1>
+		<h1 class="page-header"><%= gettext "Edit product" %></h1>
 	</div>
 
 	<div class="col-md-12">

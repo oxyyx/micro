@@ -1,17 +1,17 @@
 <div class="col-sm-12 text-right">
-  <%= link "New product", to: product_path(@conn, :new), class: "btn btn-primary", style: "margin-bottom: 5px;" %>
+  <%= link gettext("New product"), to: product_path(@conn, :new), class: "btn btn-primary", style: "margin-bottom: 5px;" %>
 </div>
 
 <div class="col-sm-12">
-<div class="panel-heading">Products</div>
+<div class="panel-heading"><%= gettext "Products" %></div>
 <table class="table table-striped table-bordered">
     <thead>
         <tr>
             <th class="icon-column"></th>
-            <th>Description</th>
-            <th class="hidden-xs">Category</th>
-            <th class="hidden-xs">Sellable</th>
-            <th class="hidden-xs">Buyable</th>
+            <th><%= gettext "Description" %></th>
+            <th class="hidden-xs"><%= gettext "Category" %></th>
+            <th class="hidden-xs"><%= gettext "Sellable" %></th>
+            <th class="hidden-xs"><%= gettext "Buyable" %></th>
             <th class="icon-column"></th>
             <th class="icon-column"></th>
         </tr>

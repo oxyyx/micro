@@ -5,8 +5,8 @@
       <div class="panel-heading"><%= product.description %></div>
       <div class="panel-body">
         <ul>
-          <li>Sellable: <%= product.sellable %></li>
-          <li>Buyable: <%= product.buyable %></li>
+          <li><%= gettext "Sellable:" %> <%= product.sellable %></li>
+          <li><%= gettext "Buyable:" %> <%= product.buyable %></li>
         </ul>
       </div>
     </div>

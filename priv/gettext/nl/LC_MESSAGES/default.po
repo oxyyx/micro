@@ -1,11 +1,120 @@
-## `msgid`s in this file come from POT (.pot) files. Do not add, change, or
-## remove `msgid`s manually here as they're tied to the ones in the
-## corresponding POT file (with the same domain). Use `mix gettext.extract
-## --merge` or `mix gettext.merge` to merge POT files into PO files.
+# # `msgid`s in this file come from POT (.pot) files. Do not add, change, or
+# # remove `msgid`s manually here as they're tied to the ones in the
+# # corresponding POT file (with the same domain). Use `mix gettext.extract
+# # --merge` or `mix gettext.merge` to merge POT files into PO files.
 msgid ""
 msgstr ""
 "Language: nl\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
 
-#: web/templates/category/index.html.eex:6
+#: web/views/category_view.ex:6 web/views/layout_view.ex:30
 msgid "Categories"
-msgstr "Categorieën"
+msgstr "Categorieen"
+
+#: web/views/product_view.ex:11 web/views/product_view.ex:14
+#: web/views/product_view.ex:31
+msgid "Buyable"
+msgstr "Inkoopbaar"
+
+#: web/views/page_view.ex:9
+msgid "Buyable:"
+msgstr "Inkoopbaar:"
+
+#: web/views/product_view.ex:12 web/views/product_view.ex:14
+#: web/views/product_view.ex:19
+msgid "Category"
+msgstr "Categorie"
+
+#: web/views/product_view.ex:26
+msgid "Date"
+msgstr "Datum"
+
+#: web/views/product_view.ex:11 web/views/product_view.ex:14
+msgid "Description"
+msgstr "Beschrijving"
+
+#: web/views/category_view.ex:3
+msgid "Edit category"
+msgstr "Bewerk categorie"
+
+#: web/views/product_view.ex:3
+msgid "Edit product"
+msgstr "Bewerk product"
+
+#: web/views/selling_price_view.ex:3
+msgid "Edit selling price"
+msgstr "Bewerk verkoopprijs"
+
+#: web/views/category_view.ex:11 web/views/category_view.ex:14
+msgid "Name"
+msgstr "Naam"
+
+#: web/views/category_view.ex:9
+msgid "Name:"
+msgstr "Naam:"
+
+#: web/views/category_view.ex:2 web/views/category_view.ex:3
+msgid "New category"
+msgstr "Nieuwe categorie"
+
+#: web/views/selling_price_view.ex:3
+msgid "New selling price"
+msgstr "Nieuwe verkoopprijs:"
+
+#: web/views/category_view.ex:14
+msgid "Parent:"
+msgstr "Ouder:"
+
+#: web/views/product_view.ex:27
+msgid "Price"
+msgstr "Prijs"
+
+#: web/views/product_view.ex:22
+msgid "Prices"
+msgstr "Prijzen"
+
+#: web/views/layout_view.ex:27 web/views/product_view.ex:6
+msgid "Products"
+msgstr "Producten"
+
+#: web/views/category_view.ex:20
+msgid "Products:"
+msgstr "Producten:"
+
+#: web/views/product_view.ex:8 web/views/product_view.ex:13
+#: web/views/product_view.ex:25
+msgid "Sellable"
+msgstr "Verkoopbaar"
+
+#: web/views/page_view.ex:8
+msgid "Sellable:"
+msgstr "Verkoopbaar:"
+
+#: web/views/layout_view.ex:17
+msgid "Toggle navigation"
+msgstr "Wissel navigatie"
+
+#: web/views/product_view.ex:2
+msgid "New product"
+msgstr "Nieuw product"
+
+#: web/views/category_view.ex:4 web/views/product_view.ex:4
+#: web/views/selling_price_view.ex:4
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "Oeps, er ging iets fout! Zie onderstaande foutmeldingen."
+
+#: web/views/category_view.ex:12 web/views/category_view.ex:19
+msgid "Parent group"
+msgstr "Bovenliggende groep"
+
+#: web/views/category_view.ex:24 web/views/selling_price_view.ex:21
+msgid "Submit"
+msgstr "Bewaren"

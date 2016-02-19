@@ -4,6 +4,12 @@ defmodule Micro.ProductController do
   alias Micro.Product
 
   plug :scrub_params, "product" when action in [:create, :update]
+  # plug :set_language
+
+  # defp set_language(conn, _opts) do
+  #   Gettext.put_locale Micro.Gettext, "nl"
+  #   conn
+  # end
 
   def index(conn, _params) do
     products = Repo.all(Product)

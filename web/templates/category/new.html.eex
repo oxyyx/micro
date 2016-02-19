@@ -1,9 +1,9 @@
 <div class="col-md-8 col-md-offset-2">
 	<div class="page-header col-md-12">
-		<h1 class="uppercase"><%= gettext "New category" %></h1>
+		<h1 class="page-header"><%= gettext "New category" %></h1>
 	</div>
 
 	<div class="col-md-12">
-                <%= render "form.html", changeset: @changeset, categories: @categories, action: category_path(@conn, :create) %>
+		<%= render "form.html", changeset: @changeset, categories: @categories, action: category_path(@conn, :create) %>
 	</div>
 </div>

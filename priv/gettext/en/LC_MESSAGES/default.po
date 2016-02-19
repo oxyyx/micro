@@ -1,11 +1,120 @@
-## `msgid`s in this file come from POT (.pot) files. Do not add, change, or
-## remove `msgid`s manually here as they're tied to the ones in the
-## corresponding POT file (with the same domain). Use `mix gettext.extract
-## --merge` or `mix gettext.merge` to merge POT files into PO files.
+# # `msgid`s in this file come from POT (.pot) files. Do not add, change, or
+# # remove `msgid`s manually here as they're tied to the ones in the
+# # corresponding POT file (with the same domain). Use `mix gettext.extract
+# # --merge` or `mix gettext.merge` to merge POT files into PO files.
 msgid ""
 msgstr ""
 "Language: en\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
 
-#: web/templates/category/index.html.eex:6
+#: web/views/category_view.ex:6 web/views/layout_view.ex:30
 msgid "Categories"
 msgstr "Categories"
+
+#: web/views/product_view.ex:11 web/views/product_view.ex:14
+#: web/views/product_view.ex:31
+msgid "Buyable"
+msgstr "Buyable"
+
+#: web/views/page_view.ex:9
+msgid "Buyable:"
+msgstr "Buyable:"
+
+#: web/views/product_view.ex:12 web/views/product_view.ex:14
+#: web/views/product_view.ex:19
+msgid "Category"
+msgstr "Category"
+
+#: web/views/product_view.ex:26
+msgid "Date"
+msgstr "Date"
+
+#: web/views/product_view.ex:11 web/views/product_view.ex:14
+msgid "Description"
+msgstr "Description"
+
+#: web/views/category_view.ex:3
+msgid "Edit category"
+msgstr "Edit category"
+
+#: web/views/product_view.ex:3 web/views/product_view.ex:3
+msgid "Edit product"
+msgstr "Edit product"
+
+#: web/views/selling_price_view.ex:3
+msgid "Edit selling price"
+msgstr "Edit selling price"
+
+#: web/views/category_view.ex:11 web/views/category_view.ex:14
+msgid "Name"
+msgstr "Name"
+
+#: web/views/category_view.ex:9
+msgid "Name:"
+msgstr "Name"
+
+#: web/views/category_view.ex:2 web/views/category_view.ex:3
+msgid "New category"
+msgstr "New category"
+
+#: web/views/selling_price_view.ex:3
+msgid "New selling price"
+msgstr "New selling price"
+
+#: web/views/category_view.ex:14
+msgid "Parent:"
+msgstr "Parent:"
+
+#: web/views/product_view.ex:27
+msgid "Price"
+msgstr "Price"
+
+#: web/views/product_view.ex:22
+msgid "Prices"
+msgstr "Prices"
+
+#: web/views/layout_view.ex:27 web/views/product_view.ex:6
+msgid "Products"
+msgstr "Products"
+
+#: web/views/category_view.ex:20
+msgid "Products:"
+msgstr "Products"
+
+#: web/views/product_view.ex:8 web/views/product_view.ex:13
+#: web/views/product_view.ex:25
+msgid "Sellable"
+msgstr "Sellable"
+
+#: web/views/page_view.ex:8
+msgid "Sellable:"
+msgstr "Sellable:"
+
+#: web/views/layout_view.ex:17
+msgid "Toggle navigation"
+msgstr "Toggle navigation"
+
+#: web/views/product_view.ex:2
+msgid "New product"
+msgstr "New product"
+
+#: web/views/category_view.ex:4 web/views/product_view.ex:4
+#: web/views/selling_price_view.ex:4
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "Oops, something went wrong! Please check the errors below."
+
+#: web/views/category_view.ex:12 web/views/category_view.ex:19
+msgid "Parent group"
+msgstr "Parent group"
+
+#: web/views/category_view.ex:24 web/views/selling_price_view.ex:21
+msgid "Submit"
+msgstr "Submit"

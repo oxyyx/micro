@@ -1,5 +1,5 @@
 <div class="col-sm-12 text-right">
-  <%= link "New category", to: category_path(@conn, :new), class: "btn btn-primary", style: "margin-bottom: 5px;" %>
+  <%= link gettext("New category"), to: category_path(@conn, :new), class: "btn btn-primary", style: "margin-bottom: 5px;" %>
 </div>
 
 <div class="col-sm-12">
@@ -8,8 +8,8 @@
     <thead>
         <tr>
             <th class="icon-column"></th>
-            <th>Name</th>
-            <th>Parent</th>
+            <th><%= gettext "Name" %></th>
+            <th><%= gettext "Parent group" %></th>
             <th class="icon-column"></th>
             <th class="icon-column"></th>
         </tr>
