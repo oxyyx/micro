@@ -24,3 +24,6 @@ gulp.task('bootstrap-sass', function() {
 gulp.task('watch', function () {
     gulp.watch(paths.BootstrapSCSS, ['bootstrap-sass']);
 });
+
+// Default gulp task.
+gulp.task('default', ['bootstrap-sass']);
