@@ -37,8 +37,8 @@
             </div>
         </nav>
 
-        <div class="alert alert-info default-hidden" role="alert"><%= get_flash(@conn, :info) %></div>
-        <div class="alert alert-danger default-hidden" role="alert"><%= get_flash(@conn, :error) %></div>
+        <div class="alert alert-info" role="alert" id="flash-info"><%= get_flash(@conn, :info) %></div>
+        <div class="alert alert-danger" role="alert" id="flash-error"><%= get_flash(@conn, :error) %></div>
 
         <div class="container-fluid" role="main">
             <%= render @view_module, @view_template, assigns %>
@@ -46,5 +46,7 @@
 
         <script src="<%= static_path(@conn, "/js/jquery.min.js") %>"></script>
         <script src="<%= static_path(@conn, "/js/bootstrap.min.js") %>"></script>
+        <script src="<%= static_path(@conn, "/js/micro.js") %>"></script>
+        <script src="<%= static_path(@conn, "/js/main.js") %>"></script>
     </body>
 </html>
