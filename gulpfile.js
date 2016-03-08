@@ -8,7 +8,7 @@ var paths = {
 }
 
 // Build admin CSS from SASS/CSS
-gulp.task('bootstrap-sass', function() {
+gulp.task('sass', function() {
     return gulp.src(paths.BootstrapSCSS)
     .pipe(sass({
         trace: true,
@@ -20,8 +20,8 @@ gulp.task('bootstrap-sass', function() {
 
 // Watch for changes.
 gulp.task('watch', function () {
-    gulp.watch(paths.BootstrapSCSS, ['bootstrap-sass']);
+    gulp.watch(paths.BootstrapSCSS, ['sass']);
 });
 
 // Default gulp task.
-gulp.task('default', ['bootstrap-sass']);
+gulp.task('default', ['sass']);
