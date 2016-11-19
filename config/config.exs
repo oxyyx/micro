@@ -11,8 +11,7 @@ config :micro, Micro.Endpoint,
   root: Path.dirname(__DIR__),
   secret_key_base: "CCmkq10FatUdwPiUAEAyV2YuU52nSRiL8anU+tXWCBUkfpdZxKRU/lWR1GLBnkmR",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Micro.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Micro.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -27,3 +26,5 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+config :micro, ecto_repos: [Micro.Repo]
