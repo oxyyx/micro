@@ -1,6 +1,6 @@
 # Micro
 
-A tiny product management application in Elixir using the awesome Phoenix framework.
+A tiny product management application in Elixir using the awesome Phoenix framework. Written with a focus on performance and idiomatic design.
 
 ## Getting started
 
@@ -12,10 +12,13 @@ To start your Phoenix app:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-For development;
-1. Make sure you have NodeJS installed on your local system
-2. Install Node/static file dependencies using `npm install` and `bower install`
-3. Make your changes
-4. Start Phoenix as described abovee.
+## Development
+
+ 1. Make sure you have Node JS installed locally.
+ 2. Install Node/static file dependencies using `npm install` and `bower install`
+ 3. Make your changes
+ 4. Start Phoenix as described above.
+
+Gulp is included for running/compiling the custom Bootstrap files.
 
 Ready to run in production? Please [check the official Phoenix Framework deployment guides](http://www.phoenixframework.org/docs/deployment).
