@@ -23,6 +23,8 @@
 		var componentContent = $component.html();
 
 		if (componentContent) {
+			$component.show();
+
 			if (delay >= 0) {
 				setTimeout(function() {
 					$component.hide();

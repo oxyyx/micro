@@ -202,6 +202,10 @@ input[type="color"]:focus, .uneditable-input:focus, textarea:focus {
   margin: 0;
 }
 
+#flash-info, #flash-error {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .alert-fixed-top {
     width: 80%;
