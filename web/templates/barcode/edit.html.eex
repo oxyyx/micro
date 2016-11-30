@@ -1,0 +1,9 @@
+<div class="col-md-8 col-md-offset-2">
+	<div class="page-header col-md-12">
+		<h1 class="uppercase"><%= gettext "Edit barcode" %></h1>
+	</div>
+
+	<div class="col-md-12">
+		<%= render "form.html", changeset: @changeset, products: @products, action: product_barcode_path(@conn, :update, @product, @barcode) %>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+<div class="col-md-8 col-md-offset-2">
+	<div class="page-header col-md-12">
+		<h1 class="uppercase"><%= gettext "New barcode" %></h1>
+	</div>
+
+	<div class="col-md-12">
+		<%= render "form.html", changeset: @changeset, action: product_barcode_path(@conn, :create, @product) %>
+	</div>
+</div>

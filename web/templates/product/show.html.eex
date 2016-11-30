@@ -36,5 +36,27 @@
                 <% end %>
             </tbody>
         </table>
+
+        <div class="text-right" style="margin-bottom: 5px;">
+            <%= link "New barcode", to: product_barcode_path(@conn, :new, @product), class: "btn btn-primary" %>
+        </div>
+
+        <div class="panel-heading"><%= gettext "Barcodes" %></div>
+        <table class="table table-bordered">
+            <thead>
+                <th class="icon-column"></th>
+                <th><%= gettext "Barcode" %></th>
+                <th><%= gettext "Type" %></th>
+            </thead>
+            <tbody>
+                <%= for barcode <- @product.barcodes do %>
+                <tr>
+                    <td class="icon-column"><a href="<%= product_barcode_path @conn, :edit, @product, barcode %>"><i class="fa fa-pencil default"></i></a></td>
+                    <td><%= barcode.barcode %></td>
+                    <td><%= barcode.type %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
     </div>
 </div>

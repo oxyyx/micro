@@ -20,6 +20,7 @@ defmodule Micro.Router do
     
     resources "/products", ProductController do
       resources "/prices", SellingPriceController, except: [:index, :show]
+      resources "/barcodes", BarcodeController, except: [:index, :show]
     end
 
     resources "/categories", CategoryController

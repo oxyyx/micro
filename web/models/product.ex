@@ -8,6 +8,7 @@ defmodule Micro.Product do
 
     belongs_to :category, Micro.Category
     has_many :sellingprices, Micro.SellingPrice, foreign_key: :product_id
+    has_many :barcodes, Micro.Barcode, foreign_key: :product_id
 
     timestamps
   end
